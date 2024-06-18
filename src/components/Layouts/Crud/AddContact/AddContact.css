@@ -1,0 +1,157 @@
+.AddForm {
+    width: 500px;
+    background-color: #fff;
+    position: absolute;
+    /* top: 110px; */
+    top: 70px;
+    /* left: 454px; */
+    left: 526px;
+    padding: 7px 20px 35px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    z-index: 99;
+}
+
+.heading h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.FormContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 27px;
+}
+
+.FormContent h4 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.inputBox {
+    height: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 0 5px;
+    
+}
+
+.name{
+    width: 220px;
+}
+
+.btn {
+    padding: 14px 18px;
+    background-color: #1f1fda;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.btn.add {
+    padding: 7px 29px;
+    width: 100%;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.overlay {
+    background: rgba(5, 3, 16, 0.80);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.closeFrom {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close_btn {
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.close_btn:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.formSubmit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 146px;
+    border: 2px dotted gray;
+    border-radius: 19px;
+}
+
+.imagePreview {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.addImage {
+    padding: 5px 13px;
+    background-color: #1b2ca9;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.avatar {
+    height: 185px;
+}
+
+.defaultImage {
+    background-image: url('blank-profile-picture-973460_1280.webp');
+    background-size: cover;
+    background-position: center;
+    width: 71%;
+    height: 55%;
+    border-radius: 100px;
+}
+
+.imageInput {
+    display: flex;
+    justify-content: center;
+}
+
+.name_box{
+    display: flex;
+    justify-content: flex-start;
+    gap: 19px;
+}
+
+img.ImagePreview {
+    width: 100px;
+    height: 55% !important;
+}

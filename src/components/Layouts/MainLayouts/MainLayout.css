@@ -1,0 +1,123 @@
+.MainPage {
+    /* background-color: #f1f1f1; */
+    background-color: #d2d2d2;
+    min-height: 100vh;
+    padding-bottom: 60px;
+  }
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+  }
+  .Main_Heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 10px ;
+  }
+ 
+  .contactPage{
+    padding: 20px 20px 20px;
+    background-color: #fff;
+    /* background-color: #caeec3; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    border-radius: 15px;
+    min-height: 77vh;
+  }
+  .addContactBtn{
+    display: flex;
+    justify-content: center;
+  }
+  .addBtn{
+    border: none;
+    background-color: #1f1fda;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+  .subSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  .ShowList{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+  }
+  .search-icon{
+    color: #1c1cc6;
+  }
+  #showList{
+    width: 50px;
+    height: 25px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    /* background-color: #caeec3; */
+  }
+  select#showList:focus-visible {
+    outline: 1px solid #4318FF;
+}
+
+.search_box{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search_box input {
+  width: 350px;
+  padding: 10px 15px 10px 31px;
+  border-radius: 6px;
+  border: 1px solid grey;
+  /* background-color: #caeec3; */
+}
+.search_box span{
+  position: absolute;
+  left: 4px;
+}
+input[type="text"]:focus-visible{
+ outline: 1px solid #4318FF ;
+}
+.pagination{
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+}
+.pagination button{
+  padding: 7px 12px;
+  border-radius: 7px;
+  border: 1px solid #F4F7FE;
+  background: none;
+  box-shadow: 0 1px 3px 0 grey;
+}
+.pagination button:hover {
+  border: 1px solid #4318FF;
+}
+.pagination_container {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+button.active{
+  border: 1px solid #4318FF;
+}
+.paginationBtn{
+  display: flex;
+  gap: 5px;
+}
+[disabled]{
+  cursor: not-allowed !important;
+  border: none;
+}
+[disabled]:hover {
+  border: 1px solid #fff !important;
+}
