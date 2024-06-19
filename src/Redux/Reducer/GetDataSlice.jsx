@@ -4,7 +4,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 // get all contacts
 export const getDataInfo = createAsyncThunk('getDataInfo', async ({ searchQuery, currentPage, pageSize }) => {
     try {
-        const response = await axios.get(`https://react-redux-contactlist-backend.onrender.com/?searchQuery=${searchQuery}&currentPage=${currentPage}&pageSize=${pageSize}`,);
+        const response = await axios.get(`http://localhost:5001/api/contactS/?searchQuery=${searchQuery}&currentPage=${currentPage}&pageSize=${pageSize}`,);
         return response.data;
     } catch (error) {
         throw error;
