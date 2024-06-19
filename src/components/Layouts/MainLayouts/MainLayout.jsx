@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Header from "../../Common/Header/Header";
 import "./MainLayout.css";
 import ContactContainer from "../ContactContainer/ContactContainer";
-// import AddContact from "../Crud/AddContact/AddContact";
 import ContactForm from "../Crud/AddContact/ContactForm";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -12,7 +11,7 @@ import {
 } from "../../../Redux/Reducer/GetDataSlice";
 
 const MainLayout = () => {
-  const [addModalOpen, setAddModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
   const { currentPage, totalPages, pageSize } = useSelector(
     (state) => state.data
   );
@@ -76,7 +75,7 @@ const MainLayout = () => {
                 <p>of {totalPages}</p>
               </div>
               <div className="addContactBtn">
-              <button className="addBtn" onClick={() => setAddModalOpen(true)}>
+              <button className="addBtn" onClick={() => setModalOpen(true)}>
                 <span className="material-symbols-outlined"> add</span>
                 <h4>Add contact</h4>
               </button>
@@ -114,10 +113,10 @@ const MainLayout = () => {
             </div>
             </div>
           </div>
-          {addModalOpen && (
+          {modalOpen && (
             <ContactForm
               closeModal={() => {
-                setAddModalOpen(false);
+                setModalOpen(false);
               }}
             />
           )}
