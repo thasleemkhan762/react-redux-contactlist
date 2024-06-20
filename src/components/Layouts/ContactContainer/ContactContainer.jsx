@@ -41,7 +41,7 @@ const ContactContainer = () => {
                 <td>
                   <div className="profile">
                     <img
-                      src={`http://localhost:5001/${contact.image}`}
+                      src={`https://react-redux-contactlist-backend.onrender.com/${contact.image}`}
                       alt=""
                     />
                     {`${contact.firstName} ${contact.lastName}`}
