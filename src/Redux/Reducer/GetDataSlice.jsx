@@ -14,7 +14,8 @@ export const getDataInfo = createAsyncThunk('getDataInfo', async ({ searchQuery,
 // Create contact
 export const createContact = createAsyncThunk('createContact', async (data) => {
     try {
-        const response = await axios.post('http://localhost:5001/api/contacts', data);
+        // const response = await axios.post('http://localhost:5001/api/contacts', data);
+        const response = await axios.post('https://react-redux-contactlist-backend.onrender.com/api/contacts', data);
         return response.data;
     } catch (error) {
         throw error;
@@ -24,7 +25,7 @@ export const createContact = createAsyncThunk('createContact', async (data) => {
 // id fetch
 export const getContactById = createAsyncThunk("getContactId", async (id) => {
   try {
-    const response = await axios.get(`http://localhost:5001/api/contacts/${id}`);
+    const response = await axios.get(`https://react-redux-contactlist-backend.onrender.com/api/contacts/${id}`);
     return response.data;
   } catch (error) {
     throw error;
@@ -34,7 +35,7 @@ export const getContactById = createAsyncThunk("getContactId", async (id) => {
 // edit contact
 export const editContact = createAsyncThunk("editContact", async ({ id, data }) => {
   try {
-    const response = await axios.put(`http://localhost:5001/api/contacts/${id}`, data);
+    const response = await axios.put(`https://react-redux-contactlist-backend.onrender.com/api/contacts/${id}`, data);
     return response.data;
   } catch (error) {
     throw error;
@@ -44,7 +45,7 @@ export const editContact = createAsyncThunk("editContact", async ({ id, data }) 
 //delete contact
 export const deleteContact = createAsyncThunk("deleteContact", async (id) => {
   try {
-    const response = await axios.delete(`http://localhost:5001/api/contacts/${id}`);
+    const response = await axios.delete(`https://react-redux-contactlist-backend.onrender.com/api/contacts/${id}`);
     console.log(response.data);
     return id;
   } catch (error) {
