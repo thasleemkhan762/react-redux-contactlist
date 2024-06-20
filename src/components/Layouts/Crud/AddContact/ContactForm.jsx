@@ -28,7 +28,7 @@ function ContactForm({ closeModal, contactId, editModalClose }) {
             setValue("lastName", contactData.lastName || "");
             setValue("email", contactData.email || "");
             setValue("phone", contactData.phone || "");
-            setImagePreview(`http://localhost:5001/${contactData.image}`);
+            setImagePreview(`https://react-redux-contactlist-backend.onrender.com/${contactData.image}`);
           }
         } catch (error) {
           console.error("Error fetching contact data:", error);
